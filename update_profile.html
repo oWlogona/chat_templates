@@ -1,5 +1,4 @@
-
-        <link rel="stylesheet" href="my_profile_style.css">
+<link rel="stylesheet" href="my_profile_style.css">
             <div class="row base_element">
                 <div class="col-md">
                     <div class="col-md-12 title_card">Редагування профiля</div>
@@ -8,20 +7,21 @@
                             <form action="/" method="post" class="form_begin">
                                 <div class="row">
                                     <div class="col-md-12">
+                                        
+                                        <div class="input-group mb-3">
+                                          <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">username</span>
+                                          </div>
+                                          <input type="text" class="form-control" name="username" placeholder="nickName" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
 
                                         <div class="input-group mb-3">
                                           <div class="input-group-prepend">
                                             <span class="input-group-text" id="basic-addon1">@</span>
                                           </div>
-                                          <input type="text" class="form-control" name="nickName" placeholder="nickName" aria-label="Username" aria-describedby="basic-addon1">
+                                          <input type="email" class="form-control" name="nickName" placeholder="email" aria-label="Username" aria-describedby="basic-addon1">
                                         </div>
 
-                                        <div class="input-group mb-3">
-                                          <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1">Name</span>
-                                          </div>
-                                          <input type="text" class="form-control" name="username" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
 
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
@@ -35,17 +35,10 @@
                                         </div>
 
                                         <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <label for="age" class="input-group-text">Ваш возраст: </label>
-                                            </div>
-                                            <select name="my_age" id="age" class="custom-select" id="inputGroupSelect02">
-                                                <option value="0">Не скажу</option>
-                                                <option value="17">від 17</option>
-                                                <option value="20">від 18 до 21</option>
-                                                <option value="23">від 22 до 25</option>
-                                                <option value="30">від 26 до 35</option>
-                                                <option value="40"> 36</option>
-                                            </select>
+                                          <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Вiк</span>
+                                          </div>
+                                          <input type="number" min=6 max=10 class="form-control" name="my_age" placeholder="16" aria-label="Username" aria-describedby="basic-addon1">
                                         </div>
 
                                         <div class="input-group mb-3">
